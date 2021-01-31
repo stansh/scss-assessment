@@ -1,4 +1,46 @@
 //scss stub for singleselect
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    
+    
+    background-blend-mode: overlay;
+    background: rgb(44, 44, 44);
+    background-image: url('room.png');
+}  
+
+
+
 .SingleSelect{
+    background-color: #E04812;
+    
+    text-align: center;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 5px;
+    width: 30%;
+    padding: 10px;
+
+
+    h1 {
+
+        color:white;
+        font-family: 'Poppins', sans-serif;     
+    }
+
+    button{
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+        background-color:#12E0B7;
+        color: darkslategrey;
+        font-size: 2rem;
+        font-family: 'Bree Serif', serif;
+        border: 2px solid darkslategrey ;
+        }
+ 
+    
 
 }

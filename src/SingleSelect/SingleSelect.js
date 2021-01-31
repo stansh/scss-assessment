@@ -23,7 +23,7 @@ const SingleSelect = props => {
     const selectedOption = props.data.options[selected]
 
     return (
-        <div className={`SingleSelect`}>
+        <div className={`SingleSelect`} >
             <h1>
                 {props.data.questionText}
             </h1>
