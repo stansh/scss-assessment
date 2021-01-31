@@ -1,13 +1,17 @@
 //scss stub for singleselect
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
 body {
     
-    
-    background-blend-mode: overlay;
-    background: rgb(44, 44, 44);
+    background: rgba(100, 100, 100, 1);
     background-image: url('room.png');
-}  
+    background-blend-mode: darken;
+    border: 0;
+
+    
+} 
 
 
 
@@ -20,6 +24,8 @@ body {
     border-radius: 5px;
     width: 30%;
     padding: 10px;
+    animation-name: bounceInDown;
+    animation-duration: 1s;  
 
 
     h1 {
@@ -40,7 +46,13 @@ body {
         font-family: 'Bree Serif', serif;
         border: 2px solid darkslategrey ;
         }
- 
-    
 
+    button:hover {
+        animation-name: shakeY;
+        animation-duration: 1s;  
+
+    }
+    
+   
+ 
 }
