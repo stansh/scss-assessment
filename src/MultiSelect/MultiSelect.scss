@@ -1,4 +1,50 @@
-//scss stub for multiselect
-.MultiSelect{
+//scss stub for singleselect
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 
+body {
+    
+    background: rgba(100, 100, 100, .5);
+    background-image: url('room.png');
+    background-blend-mode: overlay;
+    
+
+    
+} 
+
+
+
+.MultiSelect{
+    background-color: #E04812;
+    
+    text-align: center;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 5px;
+    width: 30%;
+    padding: 10px;
+    animation-name: bounceInDown;
+    animation-duration: 1s;  
+
+
+    h1 {
+
+        color:white;
+        font-family: 'Poppins', sans-serif;  
+         
+    }
+
+    
+
+    button:hover {
+        animation-name: shakeY;
+        animation-duration: 1s;  
+
+    }
+    
+    .selected {
+        background-color: red;
+    }
+ 
 }

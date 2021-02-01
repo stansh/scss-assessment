@@ -31,7 +31,7 @@ function App() {
       {
         currentSegment.type === 'single-select' && 
         <SingleSelect data={currentSegment} onComplete={handleSegmentComplete}/>
-      }
+      } 
       {
         currentSegment.type === 'multi-select' && 
         <MultiSelect data={currentSegment} onComplete={handleSegmentComplete}/>

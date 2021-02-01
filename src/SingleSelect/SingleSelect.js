@@ -49,9 +49,9 @@ const SingleSelect = props => {
     }
   
     const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
+    //const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-    console.log(show)
+    
     const [selected, setSelected] = useState(-1);
 
     const handleSelect = (i) => {
@@ -61,7 +61,7 @@ const SingleSelect = props => {
     }
 
     const selectedOption = props.data.options[selected]
-    console.log(show)
+    
     return (
       
         <div className={`SingleSelect`} >
@@ -87,7 +87,7 @@ const SingleSelect = props => {
                
                <Modal isOpen={show} toggle={handleShow} style={styles.modal} ><ModalBody>
                        
-                                    <div id="modal" className={`feedback ${selectedOption.correct ? 'correct' : 'incorrect'}`}>  
+                                    <div className={`feedback ${selectedOption.correct ? 'correct' : 'incorrect'}`}>  
                                     <h1>
                                         {selectedOption.correct ?
                                             props.data.feedback.correct.header
@@ -123,21 +123,3 @@ const SingleSelect = props => {
 export default SingleSelect;
 
 
-/* 
-<div className={`feedback ${selectedOption.correct ? 'correct' : 'incorrect'}`}>
-                    <h1>
-                        {selectedOption.correct ?
-                            props.data.feedback.correct.header
-                        :
-                            props.data.feedback.incorrect.header
-                        }
-                    </h1>
-                    <p>
-                        {selectedOption.correct ?
-                            props.data.feedback.correct.body
-                        :
-                            props.data.feedback.incorrect.body
-                        }
-                    </p>
-                    <button onClick={props.onComplete}>OK</button>
-                </div> */
